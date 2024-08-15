@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Cristopher Montecinos">
+    <title>Bienvenida</title>
+    <link th:href="@{/css/estilos.css}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/sXTBG5dr/pngwing-com.png"/>
+</head>
+<body>
+<header>
+    <div th:replace="~{nav :: nav}"></div>
+</header>
+<main>
+    <div class="row h-100 justify-content-center align-items-center text-center py-5 mt-5">
+        <div class="card" style="width: 40rem; background: rgba(142, 142, 142, 0.19);">
+            <div style="text-align: center;">
+            <img src="https://i.postimg.cc/sXTBG5dr/pngwing-com.png" class="card-img-top" alt="logo" style="width: 200px; height: 200px;">
+            </div>
+            <div class="card-body">
+            <h1>Colegio Alto Marín</h1>
+            <hr>
+            <p class="card-text h4">Bienvenido al sistema de matrículas</p>
+            </div>
+            <div class="card-btn my-3" style="text-align: center;">
+                <a class="btn btn-success" th:href="@{/students}" role="button">Registro Alumnos</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="py-4 bg-dark">
+    <div>
+    <h6 class="m-0 text-center text-white">Copyright &copy; Praxis 2024</h6>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/976707c066.js" crossorigin="anonymous"></script>
+</body>
+</html>

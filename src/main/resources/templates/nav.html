@@ -1,0 +1,15 @@
+<nav th:fragment="nav" class="navbar navbar-expand-lg bg-body-tertiary p-0">
+    <div class="container-fluid py-3">
+        <a class="navbar-brand text-light fw-bold" th:href="@{/}"><img src="https://i.postimg.cc/sXTBG5dr/pngwing-com.png" class="logo" alt="logo" style="width: 30px; height: 30px;"> Colegio Alto Marín</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" th:href="@{/students}" aria-current="page" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
